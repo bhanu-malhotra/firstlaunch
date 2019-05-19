@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+	<listeners>
+		<listener class-name="firstlaunch.ListnerConvertor" />
+	</listeners>
+	<test thread-count="5" name="Test(failed)">
+		<classes>
+			<class name="firstlaunch.DataProviderScripts">
+				<methods>
+					<include name="dataprovider" invocation-numbers="0" />
+				</methods>
+			</class> <!-- firstlaunch.DataProviderScripts -->
+			<class name="firstlaunch.FirstlaunchChrome">
+				<methods>
+					<include name="launch" />
+				</methods>
+			</class> <!-- firstlaunch.FirstlaunchChrome -->
+		</classes>
+	</test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
